@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, :root { height: 100%; }
+body {
+  @apply bg-slate-950 text-slate-100;
+  background-image:
+    radial-gradient(1000px 600px at 10% -10%, rgba(56,189,248,0.12), transparent 40%),
+    radial-gradient(800px 500px at 90% 10%, rgba(99,102,241,0.12), transparent 40%),
+    radial-gradient(1200px 800px at 50% 120%, rgba(16,185,129,0.10), transparent 40%);
+}
+.glass {
+  @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl shadow-2xl;
+}
+.gradient-text {
+  background: linear-gradient(to right, #67e8f9, #a78bfa, #34d399);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

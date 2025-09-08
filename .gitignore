@@ -1,0 +1,17 @@
+# Node
+node_modules/
+.next/
+*.log
+
+# Local model binaries (keep only on your machine)
+models/**/*.onnx
+models/**/voices-*.bin
+models/**/ggml-*.bin
+models/**/gguf-*.*
+public/audio/**/*.wav
+public/audio/**/*.mp3
+
+# Whisper build outputs (don’t ship)
+vendor/whisper.cpp/
+# Secrets
+.env.local
